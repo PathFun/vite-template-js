@@ -8,14 +8,16 @@
     "preview": "vite preview",
     "fix": "yarn fix:lint && yarn fix:style",
     "fix:lint": "yarn lint:script --fix",
-    "fix:style": "stylelint --fix  **/*.{css,less,scss,vue}",
+    "fix:style": "stylelint --fix  ./src/*.{css,less,scss,vue}",
     "lint": "yarn lint:script && yarn lint:style && yarn lint:ls",
-    "lint:script": "eslint **/*.{vue,js,ts,tsx}",
-    "lint:style": "stylelint  **/*.{css,less,scss,vue}",
+    "lint:script": "eslint ./src/*.{vue,js,ts,tsx}",
+    "lint:style": "stylelint  ./src/*.{css,less,scss,vue}",
     "lint:ls": "ls-lint",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "version": "node ./scripts/generate-version",
+    "deploy": "node ./scripts/deploy"
   },
   "dependencies": {
     "vue": "^3.2.25"
