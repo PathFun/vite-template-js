@@ -17,7 +17,7 @@
     "coverage": "vitest run --coverage",
     "prepare": "husky install",
     "version": "node ./scripts/generate-version",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "chmod a+x ./scripts/deploy.sh"
   },
   "dependencies": {
     "vue": "^3.2.25"
