@@ -16,7 +16,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepare": "husky install",
-    "version": "node ./scripts/generate-version"
+    "version": "node ./scripts/generate-version",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.2.25"
