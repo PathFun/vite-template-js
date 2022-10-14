@@ -8,6 +8,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/vite-template-js',
   plugins: [
     vue(),
     vueJsx(),
